@@ -51,15 +51,8 @@ class _SignInScreenState extends State<SignInScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     SizedBox(height: 70.h),
-                    ReusableText(
-                      text: 'Bonjour',
-                      textSize: 30.sp,
-                      textFontWeight: FontWeight.w800,
-                      textColor: const Color(0xffe1f5fe),
-                    ),
-                    SizedBox(height: 10.h),
                     Image.asset("assets/m.png"),
-                    SizedBox(height: 60.h),
+                    SizedBox(height: 50.h),
                     Form(
                       key: _formKey,
                       child: Column(
@@ -221,7 +214,7 @@ circularProgressIndicator() {
     width: 12.w,
     height: 12.h,
     child: CircularProgressIndicator(
-      color: Colors.black,
+      color: Colors.white,
     ),
   );
 }

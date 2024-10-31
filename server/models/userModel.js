@@ -86,19 +86,7 @@ userSchema.methods.correctPassword = async function (
 ) {
   return await bcrypt.compare(userpassword, password);
 };
-// 2 ) changePasswordAfter
 
-// userSchema.methods.changePasswordAfter = function (JWTTimeStamp) {
-//   if (this.changedTimepassword) {
-//     const changedTimepassword = parseInt(
-//       this.modifypassword.getTime() / 1000,
-//       10
-//     );
-//     return JWTTimeStamp < changedTimepassword;
-//   }
-//   //False means no change
-//   return false;
-// };
 // 3 ) createPasswordResetCode
 userSchema.methods.createPasswordResetCode = function () {
   const code = Math.floor(1000 + Math.random() * 9000);

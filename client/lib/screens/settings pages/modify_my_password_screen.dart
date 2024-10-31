@@ -66,7 +66,7 @@ class ModifyPasswordScreen extends StatelessWidget {
                     text: "Changer mot de passe",
                     textSize: 18.sp,
                     textFontWeight: FontWeight.w800,
-                    textColor: Colors.black,
+                    textColor: Colors.white,
                   ),
                   SizedBox(height: 5.h),
                   ReusableText(
